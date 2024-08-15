@@ -23,6 +23,10 @@ figure {
     background-color: #1c1c1c;
 }
 
+.header .flex{
+    position: relative;
+}
+
 .wrapper {
     margin: 0 auto;
     width: 90%;
@@ -42,10 +46,6 @@ figure {
     width: 100%;
 }
 
-.nav_menu {
-    width: 50%;
-}
-
 .hamburger {
     display: block;
     width: 30px;
@@ -61,6 +61,7 @@ figure {
     background-color: #fff;
     position: relative;
 }
+
 
 .hamburger span:before,
 .hamburger span:after {
@@ -215,6 +216,40 @@ figure {
     width: 20%;
 }
 
+.hamburger_cross span{
+    background-color: transparent;
+}   
+
+.hamburger_cross span:before{
+    transform: rotate(-135deg);
+    top: 0;
+}
+
+.hamburger_cross span:after{
+    transform: rotate(135deg);
+    top: 0;
+}
+.mobile_menu{
+    display: block;
+    /* position: relative; */
+    position: absolute;
+    right: 0px;
+    top: 45px;
+}
+
+.mobile_menu .menu{ 
+    display: block;
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: right;
+}
+
+.mobile_menu a{
+    display: inline-block;
+    margin: 5px;
+    font-size: 24rem;
+}
+
 @media screen and (min-width: 768px) {
     html{
         font-size: 0.85px;
@@ -223,21 +258,22 @@ figure {
     .hamburger {
         display: none;
     }
-
+    
     .nav_menu,
     .footer_nav {
         display: block;
+        width: 50%;
     }
-
+    
     .logo {
         width: 15%;
     }
-
+    
     .footer .logo {
         width: 10%;
     }
-
-
+    
+    
 }
 
 
