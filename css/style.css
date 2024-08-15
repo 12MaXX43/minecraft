@@ -1,0 +1,263 @@
+html {
+    font-size: 0.7px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+.header {
+    padding: 15px 0;
+    background-color: #1c1c1c;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav_menu {
+    width: 50%;
+}
+
+.hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger span {
+    top: 12px;
+    left: 3px;
+    width: 25px;
+    height: 3px;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+}
+
+.hamburger span:before,
+.hamburger span:after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    top: 10px;
+}
+
+.hamburger span:before {
+    top: -10px;
+}
+
+.nav_menu, 
+.footer_nav {
+    display: none;
+}
+
+.menu a,
+.footer_menu a {
+    font-size: 16rem;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.menu a:hover,
+.footer_menu a:hover {
+    color: #3b8526;
+    text-decoration: underline;
+}
+
+.advertising {
+    height: 80vh;
+    color: #fff;
+    background: url(../images/bg_adv.webp) center / cover;
+}
+
+.advertising_content {
+    margin: 0 10%;
+    width: 70%;
+}
+
+.advertising h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 30rem;
+    line-height: 1.4em;
+}
+
+.advertising p {
+    margin: 0 0 15px;
+    font-size: 18rem;
+}
+
+.button {
+    display: inline-block;
+    width: 60%;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 18rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #3b8526;
+    border-top: 4px solid #6bc349;
+    border-bottom: 4px solid #2a631c;
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.content {
+    margin-bottom: 10px;
+    padding: 50px 0;
+    background-color: #1c1c1c;
+}
+
+.games {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.games .flex {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.games h2 {
+    margin: 0 0 30px;
+    font-size: 28rem;
+}
+
+.games a {
+    min-width: 265px;
+    width: 30%;
+    text-decoration: none;
+}
+
+.games a:hover h3 {
+    color: #1c1c1c;
+    text-decoration: underline;
+}
+
+.games img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.games h3 {
+    color: #3b8526;
+    font-size: 18rem;
+}
+
+.games p {
+    color: #000;
+    font-size: 14rem;
+}
+
+.footer {
+    padding: 15px 0;
+    background-color: #1c1c1c;
+}
+
+.footer .wrapper {
+    width: 80%;
+}
+
+.footer_nav {
+    width: 70%;
+}
+
+.footer_menu{
+    column-gap: 20px;
+}
+
+.footer .logo {
+    width: 20%;
+}
+
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 0.85px;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .nav_menu,
+    .footer_nav {
+        display: block;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .footer .logo {
+        width: 10%;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1280px){
+    html{
+        font-size: 1px;
+    }
+
+    .games img{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .advertising_content {
+        width: 40%;
+    }
+}
+
+
+
+
+
